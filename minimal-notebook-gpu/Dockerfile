@@ -1,7 +1,7 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 
-FROM gcr.io/vishnuk-cloud/base-notebook-gpu
+FROM gcr.io/vishnuk-cloud/base-notebook-gpu@sha256:93537cb7eeba936054bf7ba0b007946e030734119804a688e462b5a06504072e
 
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 

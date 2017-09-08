@@ -1,6 +1,6 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-FROM gcr.io/vishnuk-cloud/minimal-notebook-gpu
+FROM gcr.io/vishnuk-cloud/minimal-notebook-gpu@sha256:78d0eb50a044cfceba7b1c3094a58a8b4808a269f3ded29bbc7a93159d1ce6c5
 
 MAINTAINER Jupyter Project <jupyter@googlegroups.com>
 

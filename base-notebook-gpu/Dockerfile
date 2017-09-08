@@ -20,6 +20,7 @@ RUN apt-get update && apt-get -yq dist-upgrade \
     sudo \
     locales \
     fonts-liberation \
+    python \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -73,6 +74,8 @@ RUN conda install --quiet --yes \
     'jupyterhub=0.7.*' \
     'jupyterlab=0.24.*' \
     && conda clean -tipsy
+
+RUN /bin/bash -c "conda create -n ipykernel_py2 python=2 ipykernel && source activate ipykernel_py2 && python -m ipykernel install --user"
 
 USER root
 
